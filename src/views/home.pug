@@ -1,0 +1,9 @@
+extends base.pug
+include mixins/video
+
+block contents
+  h1 home!!!
+  each video in videos 
+    +video(video)
+  else 
+    li Notihing
